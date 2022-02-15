@@ -10,14 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.UserListTest">
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".ui.list.UserListActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:exported="true"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ui.add.AddUserActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
